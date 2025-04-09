@@ -1,0 +1,233 @@
+
+:root {
+    --background-shade: #eeeef0;
+    --white: #fff;
+    --primary-text: #000;
+    --subtext: #231f20;
+    --icons-accent: #009ade;
+    --primary-green-accent: #89c14b;
+    --secondary-green-accent: #5b8c24;
+    --services: #1e82d9;
+}
+
+
+.kcm-foot-wrapper {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    padding-top: 36px;
+    padding-bottom: 42px;
+    color: #fff;
+    background-color: var(--primary-green-accent);
+}
+
+.kcm-foot-wrapper .footer-logo {
+    margin-bottom: 40px;
+}
+
+.kcm-foot-wrapper .foot-logo-box img {
+    width: 213px;
+    height: 96px;
+}
+
+.kcm-foot-wrapper .social-list a {
+    display: block;
+}
+
+.kcm-foot-wrapper .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.kcm-foot-wrapper .disclaim {
+    font-size: 12px;
+    max-width: 322px;
+    margin: 0 auto;
+}
+
+.kcm-foot-wrapper .disclaim a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.kcm-foot-wrapper .disclaim a:focus,
+.kcm-foot-wrapper .disclaim a:hover {
+    border-bottom: 1px dashed rgba(237, 237, 237, 0.2509803922);
+}
+
+.kcm-foot-wrapper .footer-social-cta,
+.kcm-foot-wrapper p {
+    margin-bottom: 0;
+}
+
+.kcm-foot-wrapper .social-list {
+    max-width: 260px;
+}
+
+.kcm-foot-wrapper .foot-logo-box {
+    padding-bottom: 40px;
+}
+
+.kcm-foot-wrapper .footer-social-cta {
+    padding-bottom: 17px;
+}
+
+.kcm-foot-wrapper .foot-mission-text {
+    padding-bottom: 60px;
+}
+
+.kcm-foot-wrapper .foot-social-row {
+    padding-bottom: 36px;
+}
+
+/* .kcm-foot-wrapper hr {
+    margin: 60px auto;
+} */
+
+.kcm-foot-wrapper .foot-mission-text p,
+.kcm-foot-wrapper .social-list {
+    margin: 0 auto;
+}
+
+.kcm-foot-wrapper .foot-mission-text p {
+    max-width: 338px;
+}
+
+
+
+.kcm-foot-wrapper .foot-nav-row {
+    padding-top: 28px;
+}
+
+.kcm-foot-wrapper .foot-nav-row li {
+    margin-bottom: 17px;
+}
+
+.kcm-foot-wrapper .list-link-internal {
+    margin-bottom: 0;
+}
+
+.kcm-foot-wrapper .list-link-internal .list-inline-item:not(:last-child)::after {
+    padding-left: 15px;
+    content: "|";
+}
+
+.kcm-foot-wrapper .list-link-internal a {
+    text-decoration: none;
+    color: var(--icons-accent);
+}
+
+.kcm-foot-wrapper .foot-nav-row a {
+    line-height: 1.285;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.kcm-foot-wrapper .foot-nav-row a:hover,
+.kcm-foot-wrapper .foot-nav-row a:focus {
+    color: var(--icons-accent);
+}
+
+.kcm-foot-wrapper .foot-nav-row h2 {
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: var(--primary-text);
+}
+
+.kcm-foot-wrapper .foot-nav-row h2,
+.kcm-foot-wrapper .cta-actions h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.kcm-foot-wrapper .foot-nav-row ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.kcm-foot-wrapper .jtc-wrapper h2 {
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+.kcm-foot-wrapper .mobile-links-internal ul:nth-child(2) {
+    padding-top: 5px;
+}
+
+.kcm-foot-wrapper .mission {
+    max-width: 295px;
+    margin: 0 auto 23px;
+}
+
+@media screen and (min-width: 960px) {
+    .kcm-foot-wrapper {
+        padding-bottom: 29px;
+    }
+
+    .kcm-foot-wrapper .cta-actions {
+        padding-bottom: 60px;
+    }
+
+    .kcm-foot-wrapper .disclaim {
+        max-width: initial;
+    }
+
+    .kcm-foot-wrapper .foot-mission-text p {
+        max-width: 295px;
+    }
+
+    .kcm-foot-wrapper .foot-logo-box img {
+        width: 273px;
+        height: 124px;
+    }
+}
+
+hr {
+    margin: 1rem 0;
+    color: red !important; 
+    border: 0;
+    border-top: 10px solid var(--background-shade) !important;
+    opacity: 1 !important;
+}
+
+.kcm-foot-wrapper .btn-outline-light {
+    font-size: 14px;
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+@media screen and (max-width: 767px) {
+
+    .kcm-foot-wrapper .mission,
+    .kcm-foot-wrapper .mobile-links-internal {
+        margin-bottom: 24px;
+    }
+
+    .kcm-foot-wrapper .region-select-wrap {
+        margin-bottom: 36px;
+    }
+
+    .kcm-foot-wrapper .jtc-wrapper {
+        margin-bottom: 48px;
+    }
+
+    .kcm-foot-wrapper .region-select-wrap {
+        position: relative;
+    }
+
+    .kcm-foot-wrapper .region-select-wrap .dropdown::before {
+        position: relative;
+        left: -10px;
+        display: inline-block;
+        width: 12px;
+        height: 20px;
+        content: "";
+        vertical-align: middle;
+        background-image: url('//libraries67.kcm.org/images/logos/region-icon.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
