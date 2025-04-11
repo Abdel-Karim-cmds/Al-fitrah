@@ -1,4 +1,3 @@
-
 :root {
     --background-shade: #eeeef0;
     --white: #fff;
@@ -19,7 +18,8 @@
     width: 100%;
     /* color: var(--white) !important; */
 }
-.banner-body{
+
+.banner-body {
     color: #ffffff !important;
 }
 
@@ -72,8 +72,62 @@
     padding-top: .5em;
 }
 
-.banner-list{
-    list-style: none;
+.banner-list {
     color: var(--white) !important;
     border-left: 4px solid var(--primary-green-accent);
+}
+
+.banner-list li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+    background: url('../images/disc.svg') no-repeat left top;
+    padding: 0px 0 3px 24px;
+}
+
+@media screen and (max-width: 575px) {
+    #index_banner {
+        height: 100svh;
+    }
+
+    #index_banner .carousel-item {
+        min-height: 40vh;
+    }
+
+    #index_banner .carousel-control-prev i,
+    #index_banner .carousel-control-next i {
+        font-size: 2em;
+    }
+
+    #index_banner .carousel-inner {
+        height: 100%
+    }
+
+    #index_banner .carousel-indicators li,
+    #index_banner .carousel-indicators.active {
+        background-color: var(--secondary-green-accent) !important;
+    }
+
+    .carousel-text {
+        height: 200px;
+        width: 100%;
+        padding: 0 10% 0 10%;
+    }
+
+    .banner-heading {
+        font-size: 2.5rem !important;
+        padding: none;
+    }
+
+    .banner-content {
+        padding-top: none !important;
+        padding-bottom: none !important;
+    }
+
+    .banner-list li {
+        list-style-type: disc;
+        background: none;
+    }
+    .banner-list li::marker{
+        color: var(--primary-green-accent) !important;
+    }
 }
