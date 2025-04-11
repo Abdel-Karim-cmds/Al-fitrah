@@ -1,0 +1,412 @@
+:root {
+    --background-shade: #eeeef0;
+    --white: #fff;
+    --primary-text: #000;
+    --subtext: #231f20;
+    --icons-accent: #009ade;
+    --primary-green-accent: #89c14b;
+    --secondary-green-accent: #5b8c24;
+    --services: #1e82d9;
+}
+
+#hero {
+    height: 90svh;
+    /* background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url('../images/curriculum\ background.jpg');
+    background-size: cover;
+    background: linear-gradient(#009adea0 0%,
+    rgba(0, 0, 0, 0.5)) no-repeat center center/cover,; */
+
+    background: linear-gradient(#009adea0 0%,
+            rgba(0, 0, 0, 0.5)),
+        url('../images/curriculum\ background.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+.hero-content {
+    position: absolute;
+    top: 20%;
+    /* Adjust vertical alignment */
+    left: 5%;
+    /* Aligns content to the left */
+    text-align: left;
+    /* Aligns text to the left */
+    width: 40%;
+}
+
+.hero-content h2 {
+    font-size: 5.5rem;
+    /* Adjust size as needed */
+    margin: 0 0 10px 0;
+    /* Adds spacing between headings */
+    color: var(--white);
+}
+
+.hero-content p {
+    font-size: 2rem;
+    /* Adjust size as needed */
+    margin-top: 20px;
+    /* Adds spacing above the paragraph */
+    color: #fff8;
+}
+
+.curriculum-content1 {
+    display: grid;
+    /* 2 by 2 */
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin: 0 auto;
+    height: fit-content !important;
+    padding: 3% 15%;
+}
+
+.curriculum-content1 h3,
+.curriculum-content2 .box h3 {
+    font-size: 3.5rem;
+    /* Adjust size as needed */
+    margin: 0 0 10px 0;
+    /* Adds spacing between headings */
+    color: var(--services);
+}
+
+.num {
+    color: var(--primary-green-accent);
+}
+
+.curriculum-content1 p,
+.curriculum-content2 .box p {
+
+    font-size: 2.5rem;
+    /* Adjust size as needed */
+    margin-top: 30px;
+    /* Adds spacing above the paragraph */
+    color: var(--subtext);
+}
+
+
+.curriculum-content2 .box {
+    margin: 0 auto;
+    padding: 3% 15%;
+}
+
+.curriculum-content2 .box p {
+    padding: 0 10%;
+    width: 80%;
+}
+
+.curriculum-content2 .box ul {
+    margin: 0 10%;
+    position: relative;
+    width: 80%;
+    border-left: 4px solid var(--primary-green-accent);
+    list-style: none;
+    color: var(--icons-accent);
+    font-size: 2.5rem;
+    margin-top: 30px;
+}
+
+
+.curriculum-content2 .box ul::before,
+.curriculum-content2 .box ul::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    /* Circle diameter */
+    height: 20px;
+    /* Circle diameter */
+    /* background-color: var(--primary-green-accent); Circle color */
+    border: var(--primary-green-accent) solid 4px;
+    /* Circle border color and width */
+    background-color: var(--background-shade);
+    /* Circle background color */
+    border-radius: 50%;
+    /* Makes the element circular */
+}
+
+.curriculum-content2 .box ul::before {
+    top: -10px;
+    /* Position the top circle */
+    left: -10px;
+    /* Center the circle */
+}
+
+.curriculum-content2 .box ul::after {
+    bottom: -10px;
+    /* Position the bottom circle */
+    left: -10px;
+    /* Center the circle */
+}
+
+
+.curriculum-content2 .box ul li {
+    padding-left: 20px;
+}
+
+.bottom-picture {
+    background-attachment: fixed;
+    background-image: url('../images/curriculum\ bottom.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 30svh;
+}
+
+.bookshelf-text {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 15%;
+    width: 100%;
+    text-align: center;
+
+}
+
+.bookshelf-text h2 {
+    font-size: 3.5rem;
+    /* Adjust size as needed */
+    margin: 0 0 10px 0;
+    /* Adds spacing between headings */
+    color: var(--services);
+}
+
+.bookshelf-text p {
+    font-size: 2rem;
+    /* Adjust size as needed */
+    margin-top: 20px;
+    /* Adds spacing above the paragraph */
+    /* color: #fff8; */
+    color: var(--subtext);
+}
+
+
+.slider {
+    width: 100%;
+    display: flex;
+}
+
+.slider .card {
+    flex: 1;
+    margin: 0 10px;
+    background: #fff;
+    width: 80%;
+}
+
+.slider .card .img {
+    height: 35rem;
+    width: 100%;
+}
+
+.slider .card .img img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.owl-carousel {
+    display: flex !important;
+}
+
+.bottom-books {
+    margin-top: 50px;
+    width: 100%;
+    /* align-self: end;
+    position: absolute;
+    bottom: 0; */
+}
+
+.carousel-inner img {
+    display: block;
+    margin: 0 auto;
+    /* Centers the image horizontally */
+}
+
+.curriculum_download {
+    padding: 10%
+}
+
+.curriculum_download_text {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 15%;
+    width: 100%;
+    text-align: center;
+}
+
+.curriculum_download_text h2 {
+    font-size: 3.5rem;
+    /* Adjust size as needed */
+    margin: 0 0 10px 0;
+    /* Adds spacing between headings */
+    color: var(--services);
+}
+
+.curriculum_download_text p {
+    font-size: 2rem;
+    /* Adjust size as needed */
+    margin-top: 20px;
+    /* Adds spacing above the paragraph */
+    color: var(--subtext);
+}
+
+.curriculum_download_button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 15%;
+    gap: 50px;
+}
+
+.download-curriculum {
+    border: none;
+    background: transparent;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, rgba(215, 215, 215, 0.474), #2d2d2e, rgba(215, 215, 215, 0.474));
+    border-image-slice: 2 0 2 0;
+    height: 50px;
+    font-size: 2rem;
+    color: var(--services);
+}
+
+@media screen and (max-width: 767px) {
+    .hero-content {
+        top: 10%;
+        /* Adjust vertical alignment for smaller screens */
+        left: 5%;
+        /* Aligns content to the left */
+        width: 90%;
+    }
+
+    .hero-content h2 {
+        font-size: 4rem;
+        /* Adjust size as needed */
+    }
+
+    .hero-content p {
+        font-size: 1.5rem;
+        /* Adjust size as needed */
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .hero-content {
+        top: 20%;
+        /* Adjust vertical alignment for smaller screens */
+        left: 5%;
+        /* Aligns content to the left */
+        width: 90%;
+    }
+
+    .hero-content h2 {
+        font-size: 3rem;
+        /* Adjust size as needed */
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+        /* Adjust size as needed */
+    }
+
+    .curriculum-content1 {
+        grid-template-columns: 1fr;
+        /* 1 by 1 */
+        padding: 3% 5%;
+    }
+
+    .curriculum-content1 h3 {
+        font-size: 2rem;
+        /* Adjust size as needed */
+    }
+
+    .curriculum-content1 p {
+        font-size: 1.5rem;
+        /* Adjust size as needed */
+    }
+
+    .curriculum-content2 .box h3 {
+        font-size: 2rem;
+        /* Adjust size as needed */
+    }
+
+    .curriculum-content2 .box p {
+        font-size: 1.5rem;
+        /* Adjust size as needed */
+    }
+
+    .curriculum-content2 .box {
+        /* padding: 0; */
+        padding: 3% 5%;
+        /* width: 90%; */
+    }
+
+    .curriculum-content2 .box ul {
+        font-size: 1.5rem;
+        margin-left: 0;
+        /* Adjust size as needed */
+    }
+
+    .curriculum-content2 .box ul li {
+        padding-left: 5px;
+        /* Adjust size as needed */
+    }
+
+    #hero {
+        height: 90svh;
+        background: linear-gradient(#009adea0 0%,
+                rgba(0, 0, 0, 0.5)),
+            url('../images/curriculum\ background.jpg') no-repeat center center/cover;
+    }
+
+    .bottom-picture {
+        background-image: url('../images/bottom\ pic.png');
+        /* background-repeat: no-repeat; */
+        background-size: contain;
+        width: 100%;
+        height: 30svh;
+    }
+
+    .bookshelf-text h2 {
+        font-size: 2rem;
+        /* Adjust size as needed */
+    }
+
+    .bookshelf-text p {
+        font-size: 1.5rem;
+        /* Adjust size as needed */
+    }
+
+    .slider .card .img {
+        height: 15rem;
+        width: 100%;
+    }
+
+    .slider .card .img img {
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .curriculum_download_text h2 {
+        font-size: 2.5rem;
+    }
+
+    .curriculum_download_text p {
+        font-size: 1.5rem;
+    }
+
+    .curriculum_download_button {
+        grid-template-columns: 1fr;
+        /* 1 by 1 */
+        padding: 0 5%;
+        gap: 20px;
+    }
+
+    .download-curriculum {
+        height: fit-content;
+        font-size: 1.5rem;
+        margin: 20px auto;
+    }
+}

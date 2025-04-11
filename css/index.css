@@ -16,7 +16,7 @@
 * {
     scroll-behavior: smooth;
     margin: 0;
-    transition: all 2.3s ease-in-out;
+    transition: all 1.3s ease-in-out;
 }
 
 
@@ -67,7 +67,7 @@ nav>* {
     /* Adjust the value as needed */
 }
 
-.active {
+.nav-item.active {
     color: var(--primary-green-accent) !important;
     font-weight: bold;
     /* text-decoration: underline; */
