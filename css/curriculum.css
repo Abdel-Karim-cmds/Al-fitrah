@@ -265,8 +265,8 @@
     border-bottom: 5px solid;
     border-image: linear-gradient(to right, rgba(215, 215, 215, 0.474), #2d2d2e, rgba(215, 215, 215, 0.474));
     border-image-slice: 2 0 2 0;
-    height: 50px;
-    font-size: 2rem;
+    height: 80px;
+    font-size: 1.5rem;
     color: var(--services);
 }
 
