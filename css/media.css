@@ -1,0 +1,183 @@
+
+:root {
+    --background-shade: #eeeef0;
+    --white: #fff;
+    --primary-text: #000;
+    --subtext: #231f20;
+    --icons-accent: #009ade;
+    --primary-green-accent: #89c14b;
+    --secondary-green-accent: #5b8c24;
+    --services: #1e82d9;
+}
+
+
+#media {
+    max-height: 90svh;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: 60% 40%; /* Two columns with 60% and 40% width */
+    grid-template-rows: 20% 80%; /* First column split into two rows with 20% and 80% height */
+    grid-template-areas: 
+        "col1-row1 col2"
+        "col1-row2 col2"; /* Define grid areas */
+    padding-bottom: 5%;
+}
+
+#col1-row1 {
+    color: var(--icons-accent);
+    font-size: 5em;
+    grid-area: col1-row1; /* Top row of the first column */
+}
+
+#col1-row2 {
+    grid-area: col1-row2; /* Bottom row of the first column */
+    display: flex;
+    flex-direction: column;
+}
+
+#col2 {
+    grid-area: col2; /* Second column */
+    overflow-y: scroll;
+    /* overflow-x: none; */
+    /* overflow-wrap: anywhere; */
+    padding-top: 10%;
+}
+
+.video-text{
+    color: var(--primary-text);
+    font-size: 15px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: justify;
+    font-weight: bold;
+}
+
+video{
+    height: 360px;
+    width: 640px;
+    object-fit: cover;
+}
+
+.latest{
+    color: var(--primary-green-accent);
+    font-size: 2em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: justify;
+    font-weight: bold;
+}
+
+/* .playlist{
+    list-style: none;
+}
+.playlist li{
+    margin-bottom: 10px;
+    color: var(--subtext);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.playlist-text{
+
+} */
+
+.playlist {
+    list-style: none;
+    padding: 0;
+    cursor: pointer; /* Change cursor to pointer for clickable items */
+}
+
+
+.playlist li {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Vertically center the text with the thumbnail */
+    margin-bottom: 10px;
+    color: var(--subtext);
+    font-size: 15px;
+    font-weight: bold;
+    /* cursor: pointer; */
+}
+
+.playlist li img {
+    width: 220px; /* Set a fixed width for the thumbnail */
+    height: 125px; /* Set a fixed height for the thumbnail */
+    margin-right: 10px; /* Add spacing between the thumbnail and text */
+    object-fit: cover; /* Ensure the thumbnail fits within its dimensions */
+    filter: grayscale(1);
+
+}
+
+.playlist li:hover img {
+    filter: grayscale(0); /* Remove grayscale on hover */
+    transition: ease 0.3s; /* Smooth transition for the hover effect */
+}
+
+.playlist-text {
+    white-space: nowrap; /* Prevent text from wrapping */
+    flex: 1; /* Allow the text to take up remaining space */
+}
+
+@media screen and (min-width: 2060px) {
+    /* #media {
+        padding-left: 20%;
+        padding-right: 20%;
+    } */
+    #col1-row1 {
+        font-size: 6em; /* Adjust font size for larger screens */
+    }
+    video{
+        height: 600px;
+        width: 1000px;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    #media {
+        grid-template-columns: 100%; /* Single column layout on small screens */
+        grid-template-rows: auto; /* Adjust rows to fit content */
+        grid-template-areas: 
+            "col1-row1"
+            "col2"; /* Stack the columns vertically */
+    }
+    #col1-row1 {
+        font-size: 3em; /* Adjust font size for smaller screens */
+        margin-bottom: 10px; /* Add spacing below the title */
+    }
+    
+}
+
+@media screen and (max-width: 575px) {
+    #media{
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+    }
+
+    video{
+        height: 200px;
+        width: 360px;
+    }
+    .video-text{
+        font-size: 12px;
+    }
+    .latest{
+        font-size: 1.5em;
+    }
+    video{
+        height: 200px;
+        width: 360px;
+    }
+    .playlist li img {
+        width: 150px; /* Adjust thumbnail size for smaller screens */
+        height: 80px; /* Adjust thumbnail size for smaller screens */
+    }
+    .playlist li {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+    .video-text{
+        font-size: 12px;
+    }
+}

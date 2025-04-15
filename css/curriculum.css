@@ -25,8 +25,9 @@
 }
 
 .hero-content {
-    position: absolute;
-    top: 20%;
+    position: relative;
+
+    padding-top: 10%;
     /* Adjust vertical alignment */
     left: 5%;
     /* Aligns content to the left */
@@ -270,15 +271,33 @@
     color: var(--services);
 }
 
-@media screen and (max-width: 767px) {
-    .hero-content {
-        top: 10%;
-        /* Adjust vertical alignment for smaller screens */
-        left: 5%;
-        /* Aligns content to the left */
-        width: 90%;
+@media screen and (max-width: 1920px) {
+    .hero-content h2 {
+        font-size: 3rem;
+        /* Adjust size as needed */
     }
 
+    .hero-content p {
+        font-size: 1.5rem;
+        /* Adjust size as needed */
+    }
+
+    .curriculum-content1 .box h3,
+    .curriculum-content2 .box h3 {
+        font-size: 2.5em;
+    }
+
+    .curriculum-content1 .box p,
+    .curriculum-content2 .box p {
+        font-size: 1.7em;
+    }
+
+    .skills-list li{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
     .hero-content h2 {
         font-size: 4rem;
         /* Adjust size as needed */
@@ -292,16 +311,14 @@
 }
 
 @media screen and (max-width: 575px) {
-    .hero-content {
+    /* .hero-content {
         top: 20%;
-        /* Adjust vertical alignment for smaller screens */
         left: 5%;
-        /* Aligns content to the left */
         width: 90%;
-    }
+    } */
 
     .hero-content h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         /* Adjust size as needed */
     }
 
@@ -354,7 +371,7 @@
     }
 
     #hero {
-        height: 90svh;
+        max-height: 90svh;
         background: linear-gradient(#009adea0 0%,
                 rgba(0, 0, 0, 0.5)),
             url('../images/curriculum\ background.jpg') no-repeat center center/cover;
